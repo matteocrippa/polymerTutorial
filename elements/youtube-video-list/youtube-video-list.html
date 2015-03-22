@@ -1,0 +1,31 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="youtube-video-list" attributes="query">
+
+  <template>
+
+    <core-ajax
+    auto
+    url="http://gdata.youtube.com/feeds/api/videos/"
+    params='{"alt":"json", "q":"{{query}}"}'
+    handleAs="json"
+    on-core-response="{{handleResponse}}">
+    </core-ajax>
+
+    <ul>
+
+      Search For: <input type="text" placeholder="Search" value="{{query}}" />
+      <br>
+      <template repeat="{{video in videos}}">
+        <li>
+          {{video.title.$t}}
+        </li>
+      </template>
+    </ul>
+
+  </template>
+
+  <script src="js/youtube-video-list.js"></script>
+
+</polymer-element>

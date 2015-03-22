@@ -1,0 +1,26 @@
+{
+  "name": "polymerTutorial",
+  "version": "0.0.1",
+  "authors": [
+    "Matteo Crippa <github@matteocrippa.it>"
+  ],
+  "description": "polymer awesome tutorial",
+  "main": "index.html",
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "homepage": "matteocrippa.it",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5",
+    "core-ajax": "Polymer/core-ajax#~0.5.5"
+  }
+}
