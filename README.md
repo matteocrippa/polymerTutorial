@@ -8,4 +8,4 @@ In order to test it:
 * python -m SimpleHTTPServer
 * open your browser to http://localhost:8000
 
-You can watch a full video tutorial on youtube: 
+You can watch a full video tutorial on youtube: http://youtu.be/wDakf8DRyDU
